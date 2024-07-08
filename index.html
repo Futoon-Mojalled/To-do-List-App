@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>To-Do System</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>To-Do List<img src="To-Do List.svg" alt="todolist-icon"></h1>
+            <div class="input-container">
+                <input type="text" id="input-box" placeholder="Add a new task">
+                <button id="add-button" onclick="addTask()">Add</button>
+            </div>
+            <ul id="todo-list"></ul>
+            
+                <button id="complete-all" onclick="completeAllTask()">Complete all</button>
+                <button id="delete-all" onclick="deleteAllTask()">Delete all</button>
+            
+        </div>
+    <script src="script.js"></script>
+    </body>
+</html>

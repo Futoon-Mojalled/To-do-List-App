@@ -1,0 +1,158 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #2d2d2d;
+    background-color: #FEE6DA;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.container {
+    width: 100%;
+    max-width: 430px;
+    background: #ffffff60;
+    margin: 150px auto 20px;
+    padding: 15px 0px 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px #fcd2be;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-left: 13px;
+}
+
+.container h1 img {
+    width: 32px;
+    margin-left: 8px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding-left: 15px;
+}
+
+#input-box{
+    font-size: 15px;
+    display: block;
+    height: 28px;
+    width: 66%;
+    border-radius: 15px;
+    border-color: #2d2d2d;
+    border: none;
+    padding-left: 15px;
+}
+
+#add-button{
+    font-size: 15px;
+    color: white;
+    background: #8E9FE0;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    padding: 6.5px 16px;
+    cursor: pointer;    
+}
+
+#complete-all, #delete-all{
+    width: 120px;
+    height: 30px;
+    font-size: 15px;
+    color: white;
+    background: #8E9FE0;
+    outline: none;
+    border: none;
+    border-radius: 14px;
+    padding: 7.5px 16px;
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+}
+
+#complete-all {
+    margin-left: 67px;
+}
+
+#complete-all {
+    margin-left: 76px;
+}
+
+#add-button:hover, #delete-all:hover, #complete-all:hover {
+    background-color: #607ae3;
+}
+
+ul li{
+    position: relative;
+    list-style: none;
+    font-size: 16px;
+    padding: 12px 8px 12px 8px;
+    cursor: pointer;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    background-image: url(unCheacked.svg);
+    background-size: cover;
+    background-position: center;
+    top: 10px;
+    left: -20px;
+}
+
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url(check.svg);
+}
+
+ul li .edit-btn, ul li .delete-btn {
+    position: absolute;
+    top: 7px;
+    width: 27px;
+    height: 27px;
+    font-size: 22px;
+    color: white;
+    line-height: 27px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 74px;
+    cursor: pointer;
+}
+
+ul li .delete-btn {
+    right: 0;
+    background: #ac0f0f;
+}
+
+ul li .delete-btn:hover {
+    background: #920c0c;
+}
+
+ul li .edit-btn {
+    right: 31px;
+    background: #ffc107;
+}
+
+ul li .edit-btn:hover {
+    background: #e0a800;
+}
+
+ul li input[type="text"] {
+    display: none;
+    width: 68.5%;
+    margin-right: 10px;
+    font-size: 15px;
+    border-radius: 15px;
+    padding: 5px;
+    padding-left: 13px;
+}
